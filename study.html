@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f3e9">
+<meta name="description" content="Wonder: an ongoing, open-ended study of completed intelligibility.">
+<title>The Ongoing Study · Wonder</title>
+<style>
+:root{--paper:#f7f3e9;--ink:#263239;--muted:#677476;--gold:#b78a31;--line:#dfd7c7;--soft:#fffdf8;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,Segoe UI,sans-serif}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:16px/1.65 var(--sans);background:radial-gradient(ellipse at 75% 0%,#f2e2b9,transparent 33%),var(--paper)}
+a{color:inherit}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:min(960px,calc(100% - 36px));margin:auto}.top{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap}.brand{font:750 12px var(--sans);text-transform:uppercase;letter-spacing:.18em;text-decoration:none}.top a:not(.brand){font:650 12px var(--sans);color:var(--muted);text-decoration:none}.top a:hover{text-decoration:underline}
+.hero{padding:65px 0 38px}.eyebrow{font:750 11px var(--sans);text-transform:uppercase;letter-spacing:.18em;color:#977022}.hero h1{font:400 clamp(54px,9vw,104px)/.99 var(--serif);letter-spacing:-.063em;margin:12px 0 18px}.hero p{max-width:680px;margin:0;color:var(--muted);font:19px/1.6 var(--serif)}
+.toolbar{position:sticky;top:0;z-index:4;padding:13px 0;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:9px;flex-wrap:wrap}.btn{border:1px solid #cec1a3;background:var(--soft);border-radius:999px;padding:10px 16px;font:700 12px var(--sans);color:var(--ink)}.btn.primary{background:#a77d2c;border-color:#a77d2c;color:#fff}.btn:hover{filter:brightness(.97)}.status{font-size:12px;color:var(--muted)}.count{margin-left:auto;font-size:12px;color:var(--muted)}#importfile{display:none}
+.empty{border:1px dashed #c9baa0;border-radius:22px;padding:58px 30px;text-align:center;margin:38px 0;background:#fffcf575}.empty span{display:block;font:italic 40px var(--serif);color:#a77d2c}.empty p{color:var(--muted);font-size:14px;max-width:500px;margin:9px auto 0}
+.entries{margin:26px 0 100px}.entry{position:relative;border-left:2px solid #cbaa68;padding:19px 0 26px 32px;margin:0 0 8px}.entry:before{content:'';position:absolute;width:12px;height:12px;border:2px solid var(--paper);border-radius:50%;background:var(--gold);left:-7px;top:30px}.entryhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.date{font:700 11px var(--sans);letter-spacing:.13em;text-transform:uppercase;color:#9b742e}.remove{background:none;border:0;font:650 12px var(--sans);color:#93685b;text-decoration:underline}.title{display:block;width:100%;border:0;background:transparent;font:400 clamp(27px,4vw,39px)/1.3 var(--serif);color:var(--ink);padding:5px 0 12px;outline-offset:3px}.title::placeholder{color:#aba89d}.body{display:block;width:100%;min-height:190px;resize:vertical;border:1px solid var(--line);background:#fffdf9;color:var(--ink);border-radius:16px;padding:21px 22px;font:17px/1.8 var(--serif)}.body::placeholder{color:#9b9e9c}.entrynote{font-size:11px;color:var(--muted);margin-top:9px}
+.foot{border-top:1px solid var(--line);padding:25px 0 50px;color:var(--muted);font-size:12px}.foot p{max-width:700px}
+@media(max-width:600px){.hero{padding:38px 0}.toolbar{position:static}.entry{padding-left:22px}.body{padding:16px}.count{margin-left:0}}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a class="brand" href="./">Wonder / The 54</a><div><a href="./">← Return to the cards</a> &nbsp; <a href="https://github.com/TitanicParker/wonder">Repository</a></div></nav>
+<header class="hero"><div class="eyebrow">The centre of study · An open document</div><h1>The Ongoing<br>Study.</h1><p>A place to keep looking. No final page, no compulsory conclusion. Add an observation, a question, a sentence, a structural discovery — and continue.</p></header>
+<div class="toolbar" role="toolbar" aria-label="Study controls">
+<button id="add" class="btn primary" type="button">＋ Add a passage</button>
+<button id="exportmd" class="btn" type="button">Export Markdown ↓</button>
+<button id="exportjson" class="btn" type="button">Back up JSON ↓</button>
+<button id="import" class="btn" type="button">Import JSON ↑</button>
+<input type="file" accept=".json,application/json" id="importfile">
+<span class="count" id="count">0 passages</span><span class="status" id="status" role="status"></span>
+</div>
+<main id="main"><div id="empty" class="empty"><span>The first page is open.</span><p>This study begins wherever you choose. Use <strong>Add a passage</strong> to write its first entry.</p></div><div class="entries" id="entries" aria-label="Ongoing study passages"></div></main>
+<footer class="foot"><p>Passages save in this browser on this device. They do not automatically publish to GitHub or synchronise elsewhere. Export Markdown to preserve the study as a document, and export JSON to back it up for later editing or transfer between browsers.</p></footer>
+</div>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id),key='wonder-ongoing-study-v1';let passages=[];
+try{const raw=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(raw))passages=raw.filter(x=>x&&typeof x.id==='string'&&typeof x.title==='string'&&typeof x.text==='string').map(x=>({id:x.id,date:typeof x.date==='string'?x.date:'',title:x.title,text:x.text}))}catch(e){}
+function persist(){try{localStorage.setItem(key,JSON.stringify(passages));$('status').textContent='Saved locally'}catch(e){$('status').textContent='Storage unavailable — please export your writing'}}
+function download(name,content,type){const u=URL.createObjectURL(new Blob([content],{type})),a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+function render(focus){$('empty').hidden=passages.length>0;$('entries').replaceChildren();$('count').textContent=passages.length+' passage'+(passages.length===1?'':'s');
+for(const p of passages){const card=document.createElement('section');card.className='entry';card.id='entry-'+p.id;
+const head=document.createElement('div');head.className='entryhead';const date=document.createElement('span');date.className='date';date.textContent=p.date||'Undated passage';
+const del=document.createElement('button');del.className='remove';del.type='button';del.textContent='Remove passage';del.setAttribute('aria-label','Remove passage '+(p.title||'untitled'));del.onclick=()=>{if(!confirm('Remove this passage? Export a backup first if you want to keep it.'))return;passages=passages.filter(x=>x.id!==p.id);persist();render()};
+head.append(date,del);
+const title=document.createElement('input');title.className='title';title.placeholder='Untitled observation';title.setAttribute('aria-label','Passage title');title.value=p.title;title.oninput=()=>{p.title=title.value;persist()};
+const body=document.createElement('textarea');body.className='body';body.placeholder='What did you notice? What is worth returning to?';body.setAttribute('aria-label','Passage text');body.value=p.text;body.oninput=()=>{p.text=body.value;persist();body.style.height='auto';body.style.height=Math.max(190,body.scrollHeight)+'px'};
+const note=document.createElement('div');note.className='entrynote';note.textContent='An open page — return and continue whenever you wish.';
+card.append(head,title,body,note);$('entries').append(card);body.style.height='auto';body.style.height=Math.max(190,body.scrollHeight)+'px';if(focus===p.id){card.scrollIntoView({behavior:'smooth',block:'center'});title.focus()}}
+}
+function uid(){return String(Date.now())+'-'+Math.random().toString(36).slice(2,10)}
+$('add').onclick=()=>{const p={id:uid(),date:new Date().toLocaleDateString(undefined,{day:'numeric',month:'long',year:'numeric'}),title:'',text:''};passages.push(p);persist();render(p.id)};
+$('exportjson').onclick=()=>download('wonder-ongoing-study-backup.json',JSON.stringify({format:'wonder-ongoing-study-v1',passages},null,2),'application/json');
+$('exportmd').onclick=()=>{const out='# Wonder — The Ongoing Study\n\n'+passages.map((p,i)=>'## '+(p.title.trim()||'Passage '+(i+1))+'\n\n*'+p.date+'*\n\n'+p.text+'\n').join('\n---\n\n');download('wonder-ongoing-study.md',out,'text/markdown')};
+$('import').onclick=()=>$('importfile').click();
+$('importfile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const obj=JSON.parse(await f.text());if(obj.format!=='wonder-ongoing-study-v1'||!Array.isArray(obj.passages))throw Error('Not a Wonder study backup');const incoming=obj.passages;if(!incoming.every(x=>x&&typeof x.id==='string'&&typeof x.title==='string'&&typeof x.text==='string'))throw Error('Invalid passages');if(passages.length&&!confirm('Replace the passages in this browser with this backup?'))return;passages=incoming.map(x=>({id:x.id,title:x.title,text:x.text,date:typeof x.date==='string'?x.date:''}));persist();render();$('status').textContent='Backup imported'}catch(err){$('status').textContent=err.message}finally{e.target.value=''}};
+render();
+})();
+</script>
+</body></html>
