@@ -1,0 +1,786 @@
+{
+  "schema": "wonder-curated-study-v1",
+  "updated": "2026-11-22",
+  "mission": [
+    "Wonder exists to discover what becomes visible when intelligibility itself becomes the subject of sustained attention.",
+    "Its purpose is to investigate the fifty-four forms of completed intelligibility through their canonical definitions, triaxial identities, X–Y traversals, ordinary examples, unexpected correspondences and neighbouring distinctions.",
+    "Wonder is a living study, not a finished explanation.",
+    "Its method is inseparable from its subject: What changed? What made that change sufficient? How does the achievement remain available?",
+    "Its goal is to become increasingly capable of recognising intelligibility in its own right, and to make that recognition available to others."
+  ],
+  "discipline": "The 54 are forms of completed intelligibility, not 54 kinds of meaning. Recognise the Operative Centre before identifying coordinates. Dimensional Conjunction mutually determines one completion-event; its three dimensions must not be read as additive properties. Historical X–Y traversals are kept alongside, not substituted for, later triaxial resolutions.",
+  "sources": [
+    {
+      "kind": "Controlling authority",
+      "title": "THE_54_CONTROL.md",
+      "url": "https://github.com/TitanicParker/fiche-ceathar/blob/main/THE_54_CONTROL.md",
+      "use": "The fifteen canonical definitions, Dimensional Conjunction, cell numbers and canonical names."
+    },
+    {
+      "kind": "Aligned reference",
+      "title": "THE_54_COMPLETE_REFERENCE_TABLE.md",
+      "url": "https://github.com/TitanicParker/fiche-ceathar/blob/main/THE_54_COMPLETE_REFERENCE_TABLE.md",
+      "use": "Original X–Y expressions and White Deck structural characterisations, preserved beside canonical identities, not treated as interchangeable."
+    },
+    {
+      "kind": "Recognition entrance",
+      "title": "WHAT_MUST_ALREADY_BE_RECOGNISED.md",
+      "url": "https://github.com/TitanicParker/fiche-ceathar/blob/main/WHAT_MUST_ALREADY_BE_RECOGNISED.md",
+      "use": "Operative Centre, three recognition questions, convergence and recognition before classification."
+    },
+    {
+      "kind": "Living collection",
+      "title": "Wonder",
+      "url": "https://github.com/TitanicParker/wonder",
+      "use": "The 54 interactive cards, local visitor notes and the public ongoing study."
+    },
+    {
+      "kind": "Practical inquiry",
+      "title": "Maya’s Bike",
+      "url": "https://github.com/TitanicParker/mayas-bike",
+      "use": "Potential practical/narrative investigation. Examples must be checked against actual files before being attributed."
+    }
+  ],
+  "definitions": [
+    {
+      "name": "Transformation Pattern",
+      "definition": "Specifies what kind of unresolvedness is altered between the opening and completed situation."
+    },
+    {
+      "name": "Completion Topology",
+      "definition": "Specifies the structural shape by which the transformation counts as complete."
+    },
+    {
+      "name": "Persistence Mode",
+      "definition": "Specifies how the achieved completion remains available for subsequent uptake."
+    },
+    {
+      "name": "Differentiation",
+      "definition": "A difference that was unavailable, flattened, conflated, or non-operative becomes determinate enough to matter."
+    },
+    {
+      "name": "Opening",
+      "definition": "Availability, reach, continuation, access, or possibility becomes greater than it was under the opening constraint."
+    },
+    {
+      "name": "Relating",
+      "definition": "A bearing, dependency, correspondence, ordering, reciprocity, or mutual determination becomes constitutive of the situation."
+    },
+    {
+      "name": "Repair",
+      "definition": "An organization that fails relative to an operative criterion is changed so that the misfit or fault no longer governs the result."
+    },
+    {
+      "name": "Integration",
+      "definition": "Separate parts acquire determinate roles through organization into a whole and thereby gain structure, mutual support, or joint capacity."
+    },
+    {
+      "name": "Settlement",
+      "definition": "A live demand for further uptake, choice, explanation, completion, adjudication, or continuation is discharged."
+    },
+    {
+      "name": "Focal",
+      "definition": "The transformation becomes complete because completion gathers around one privileged locus. That locus is constitutive of why the transformation counts as complete."
+    },
+    {
+      "name": "Distributed",
+      "definition": "The transformation becomes complete only across a constitutive plurality, span, sequence, range, reciprocal field, set of cases, or system. No single locus is sufficient by itself."
+    },
+    {
+      "name": "Release",
+      "definition": "The transformation becomes complete because something that previously governed the situation loses its determining force. Release means de-governance, not merely removal, absence, negation, separation, physical movement away, or negative wording."
+    },
+    {
+      "name": "Standing",
+      "definition": "The achieved determination itself remains available as the completed result."
+    },
+    {
+      "name": "Bearing",
+      "definition": "The achieved result remains what it is only through a constitutive relation, dependency, contrast, condition, source, proportion, frame, support, or mutual determination."
+    },
+    {
+      "name": "Efficacy",
+      "definition": "The achieved result remains as an accomplished capacity, operative effect, changed continuation, rule, function, or consequential difference in what can happen."
+    }
+  ],
+  "cells": [
+    {
+      "id": 1,
+      "name": "Focal mark",
+      "transformation": "Differentiation",
+      "topology": "Focal",
+      "persistence": "Standing",
+      "xy": "X is simply placed as Y.",
+      "short": "This.",
+      "character": "An unresolved particular becomes distinctly available as what it is. The completion resides in the identified particular, rather than in its comparative standing or the response it elicits.",
+      "investigation": null
+    },
+    {
+      "id": 2,
+      "name": "Binary bearing",
+      "transformation": "Differentiation",
+      "topology": "Focal",
+      "persistence": "Bearing",
+      "xy": "X is classified as one of Y₁ / Y₂.",
+      "short": "This, not that.",
+      "character": "A particular becomes distinctly exceptional, prominent, or otherwise set apart through a constitutive contrast. Its achieved distinctness is its situated standing, not simply its independently identified identity.",
+      "investigation": null
+    },
+    {
+      "id": 3,
+      "name": "Boundary act",
+      "transformation": "Differentiation",
+      "topology": "Focal",
+      "persistence": "Efficacy",
+      "xy": "X is separated from Y by a boundary.",
+      "short": "This far.",
+      "character": "A decisive difference becomes an operative discriminator. Completion consists in the distinction determining which continuation occurs at a privileged threshold or decision point.",
+      "investigation": null
+    },
+    {
+      "id": 4,
+      "name": "Scope standing",
+      "transformation": "Differentiation",
+      "topology": "Distributed",
+      "persistence": "Standing",
+      "xy": "X is constrained to the specific Y.",
+      "short": "Within this.",
+      "character": "A previously conflated range becomes an articulated pattern of differences. The achieved result is the determinate differentiation of the relevant field, not an isolated identified member.",
+      "investigation": null
+    },
+    {
+      "id": 5,
+      "name": "Context-bound mark",
+      "transformation": "Differentiation",
+      "topology": "Distributed",
+      "persistence": "Bearing",
+      "xy": "X indicates absent Y.",
+      "short": "This here.",
+      "character": "A field becomes differentiated through the contextual standings of its members. What distinguishes a member is constituted by the company, scale, or environment in which it stands.",
+      "investigation": null
+    },
+    {
+      "id": 6,
+      "name": "Field separation",
+      "transformation": "Differentiation",
+      "topology": "Distributed",
+      "persistence": "Efficacy",
+      "xy": "X differs from Y only within scope S.",
+      "short": "These among these.",
+      "character": "A range of relevant differences becomes a differentiated practice of response. Its completion is an achieved discrimination across cases that can no longer be handled interchangeably.",
+      "investigation": null
+    },
+    {
+      "id": 7,
+      "name": "Opposed standing",
+      "transformation": "Differentiation",
+      "topology": "Release",
+      "persistence": "Standing",
+      "xy": "X stands against Y.",
+      "short": "Opposed.",
+      "character": "A definite difference becomes available when an imposed sameness or categorisation ceases to determine what can be distinguished. The achieved distinction stands beyond the formerly governing conflation.",
+      "investigation": null
+    },
+    {
+      "id": 8,
+      "name": "Graded contrast",
+      "transformation": "Differentiation",
+      "topology": "Release",
+      "persistence": "Bearing",
+      "xy": "X varies toward Y along a continuum.",
+      "short": "More and less.",
+      "character": "Difference becomes determinate through comparison after a privileged norm ceases to dictate its interpretation. The achieved distinction is comparative without one term having to count as the standard from which the others deviate.",
+      "investigation": null
+    },
+    {
+      "id": 9,
+      "name": "Exclusive cut",
+      "transformation": "Differentiation",
+      "topology": "Release",
+      "persistence": "Efficacy",
+      "xy": "X selects only one among Y options.",
+      "short": "Not admitted.",
+      "character": "An inherited conflation loses authority over response, allowing relevant differences to govern selection or exclusion. The completion is discrimination freed from a classification that previously overrode it.",
+      "investigation": null
+    },
+    {
+      "id": 10,
+      "name": "Source field",
+      "transformation": "Opening",
+      "topology": "Focal",
+      "persistence": "Standing",
+      "xy": "X expands outward into Y.",
+      "short": "From here.",
+      "character": "A definite avenue of access becomes available at the point that governs entry. The achieved opening is an established entrance into what had been inaccessible.",
+      "investigation": null
+    },
+    {
+      "id": 11,
+      "name": "Source-carried divergence",
+      "transformation": "Opening",
+      "topology": "Focal",
+      "persistence": "Bearing",
+      "xy": "X moves away from source Y along shifting paths.",
+      "short": "From here, either way.",
+      "character": "Access becomes definite through an indispensable enabling connection at its point of entry. The opening remains constituted by that connection, as admission through a key, source, support, or qualifying link.",
+      "investigation": null
+    },
+    {
+      "id": 12,
+      "name": "Branching output",
+      "transformation": "Opening",
+      "topology": "Focal",
+      "persistence": "Efficacy",
+      "xy": "X branches into multiple Y’s.",
+      "short": "More ways open.",
+      "character": "A decisive bottleneck becomes passable in practice. The opening is accomplished as the capacity to get through where continuation previously failed.",
+      "investigation": null
+    },
+    {
+      "id": 13,
+      "name": "Alternate passage",
+      "transformation": "Opening",
+      "topology": "Distributed",
+      "persistence": "Standing",
+      "xy": "X reaches Y by different path Z.",
+      "short": "Another way through.",
+      "character": "A restricted repertoire becomes a definite range of available alternatives or passages. The completion is the expanded field of options itself.",
+      "investigation": null
+    },
+    {
+      "id": 14,
+      "name": "Span-carried reach",
+      "transformation": "Opening",
+      "topology": "Distributed",
+      "persistence": "Bearing",
+      "xy": "X affects distant Y.",
+      "short": "Reachable across.",
+      "character": "A field of possibilities becomes available through a determinate pattern of enabling conditions. The achieved latitude is differentiated by what supports access across that field.",
+      "investigation": null
+    },
+    {
+      "id": 15,
+      "name": "Field distribution",
+      "transformation": "Opening",
+      "topology": "Distributed",
+      "persistence": "Efficacy",
+      "xy": "X is spread as field Y.",
+      "short": "Available throughout.",
+      "character": "Feasible continuation expands across a span whose intervening points must support passage. The completion is extended reach accomplished through the relevant course.",
+      "investigation": null
+    },
+    {
+      "id": 16,
+      "name": "Released option",
+      "transformation": "Opening",
+      "topology": "Release",
+      "persistence": "Standing",
+      "xy": "X can follow any Y₁, Y₂, Y₃…",
+      "short": "Free to choose.",
+      "character": "A possibility becomes definitely available because a former veto ceases to determine its availability. The result is an established option that the old restriction no longer closes.",
+      "investigation": null
+    },
+    {
+      "id": 17,
+      "name": "Continual passage",
+      "transformation": "Opening",
+      "topology": "Release",
+      "persistence": "Bearing",
+      "xy": "X gradually transitions into Y.",
+      "short": "Through without break.",
+      "character": "Availability becomes grounded in a support that renders a formerly governing restriction non-determining. The opening is independent of that restriction but remains constituted through its positive enabling basis.",
+      "investigation": null
+    },
+    {
+      "id": 18,
+      "name": "Edge opening",
+      "transformation": "Opening",
+      "topology": "Release",
+      "persistence": "Efficacy",
+      "xy": "X grows at its edges into Y.",
+      "short": "Beyond.",
+      "character": "Continuation becomes executable beyond a constraint that formerly determined its stopping point. The achievement is an operative freedom to proceed where that constraint no longer controls what can happen.",
+      "investigation": null
+    },
+    {
+      "id": 19,
+      "name": "Direct bearing",
+      "transformation": "Relating",
+      "topology": "Focal",
+      "persistence": "Standing",
+      "xy": "X relates directly to Y.",
+      "short": "This bears on that.",
+      "character": "A bearing becomes definite through a decisive point of connection or reference. The achieved intelligibility is an established attachment: this belongs with, points to, follows from, or bears upon that.",
+      "investigation": null
+    },
+    {
+      "id": 20,
+      "name": "Pivoted balance",
+      "transformation": "Relating",
+      "topology": "Focal",
+      "persistence": "Bearing",
+      "xy": "X balances with Y around pivot Z.",
+      "short": "Held in counterbalance.",
+      "character": "Something acquires a definite position, weight, or significance through a constitutive reference point. Its determination resides in its bearing upon that reference, rather than being detachable from it.",
+      "investigation": null
+    },
+    {
+      "id": 21,
+      "name": "Responsive return",
+      "transformation": "Relating",
+      "topology": "Focal",
+      "persistence": "Efficacy",
+      "xy": "X mirrors Y.",
+      "short": "Answered.",
+      "character": "A bearing is consummated in a definite response. Something reaches a responsive locus and is taken up there in a way that constitutes what happens.",
+      "investigation": null
+    },
+    {
+      "id": 22,
+      "name": "Sequential link",
+      "transformation": "Relating",
+      "topology": "Distributed",
+      "persistence": "Standing",
+      "xy": "X leads sequentially to Y.",
+      "short": "Then.",
+      "character": "A plurality becomes determinate as an articulated arrangement of bearings. The completion is the established configuration: how its terms connect, follow, correspond, or stand in order.",
+      "investigation": null
+    },
+    {
+      "id": 23,
+      "name": "Reciprocal shift",
+      "transformation": "Relating",
+      "topology": "Distributed",
+      "persistence": "Bearing",
+      "xy": "X changes in response to Y.",
+      "short": "Each changes the other.",
+      "character": "Terms become determinate through what they are to one another. Their relevant identities, positions, proportions, or significance belong to a constitutive field of bearings.",
+      "investigation": "cell-23-first-investigation"
+    },
+    {
+      "id": 24,
+      "name": "Relational cycle",
+      "transformation": "Relating",
+      "topology": "Distributed",
+      "persistence": "Efficacy",
+      "xy": "X returns to Y in a loop.",
+      "short": "Back into itself.",
+      "character": "A field of bearings closes into an operative course: effects pass through its connections and return, propagate, or coordinate in a way that determines continuation.",
+      "investigation": null
+    },
+    {
+      "id": 25,
+      "name": "Pattern alignment",
+      "transformation": "Relating",
+      "topology": "Release",
+      "persistence": "Standing",
+      "xy": "X aligns structurally with Y.",
+      "short": "The same arrangement.",
+      "character": "An arrangement becomes determinate independently of variations that previously governed whether it counted as the same arrangement. The completion is relational invariance: a structure stands despite changes in its presentation or carriers.",
+      "investigation": null
+    },
+    {
+      "id": 26,
+      "name": "Role correspondence",
+      "transformation": "Relating",
+      "topology": "Release",
+      "persistence": "Bearing",
+      "xy": "X shares deep pattern with Y.",
+      "short": "This plays that role.",
+      "character": "A correspondence becomes determinate through a constitutive role once particular embodiment ceases to govern what can occupy that role. Different things can stand for, replace, or answer to one another because of their bearing within a situation.",
+      "investigation": null
+    },
+    {
+      "id": 27,
+      "name": "Emergent coordination",
+      "transformation": "Relating",
+      "topology": "Release",
+      "persistence": "Efficacy",
+      "xy": "X interacts locally to produce global Y.",
+      "short": "Something appears between them.",
+      "character": "A relational influence becomes operative by overcoming a previously governing separation or independence. What emerges is a course of coordination that cannot be supplied by the terms’ isolated continuations.",
+      "investigation": null
+    },
+    {
+      "id": 28,
+      "name": "Focal adjustment",
+      "transformation": "Repair",
+      "topology": "Focal",
+      "persistence": "Standing",
+      "xy": "X shifts slightly toward Y.",
+      "short": "Set right.",
+      "character": "A fault is resolved in a decisive corrected determination. The achievement is the sound version at the point whose misfit had governed the result.",
+      "investigation": null
+    },
+    {
+      "id": 29,
+      "name": "Proportional correction",
+      "transformation": "Repair",
+      "topology": "Focal",
+      "persistence": "Bearing",
+      "xy": "X rebalances Y’s influence.",
+      "short": "Rightly balanced.",
+      "character": "A local misfit becomes a proper fit through the counterpart, proportion, or requirement that constitutes its adequacy. The corrected reality is an achieved match, not a freestanding improved item.",
+      "investigation": null
+    },
+    {
+      "id": 30,
+      "name": "Load transfer",
+      "transformation": "Repair",
+      "topology": "Focal",
+      "persistence": "Efficacy",
+      "xy": "X transfers strain to Y.",
+      "short": "The burden shifts.",
+      "character": "Failure at a decisive functional locus is resolved as restored operation. The achievement consists in that locus properly doing what its failure had prevented.",
+      "investigation": null
+    },
+    {
+      "id": 31,
+      "name": "Cross-position validation",
+      "transformation": "Repair",
+      "topology": "Distributed",
+      "persistence": "Standing",
+      "xy": "X is tested by flipping into Y (its opposite).",
+      "short": "Does it still hold across?",
+      "character": "A faulty account or arrangement becomes sound across its implicated range. The completion is a corrected configuration whose validity survives the necessary cross-checks rather than a succession of locally improved fragments.",
+      "investigation": null
+    },
+    {
+      "id": 32,
+      "name": "Joint-bound repair",
+      "transformation": "Repair",
+      "topology": "Distributed",
+      "persistence": "Bearing",
+      "xy": "X is corrected by its dual Y.",
+      "short": "Right between both.",
+      "character": "Misfitting parts acquire a proper pattern of mutual fit. The corrected reality is their alignment through the interfaces that constitute adequacy across the arrangement.",
+      "investigation": null
+    },
+    {
+      "id": 33,
+      "name": "In-course correction",
+      "transformation": "Repair",
+      "topology": "Distributed",
+      "persistence": "Efficacy",
+      "xy": "X changes direction toward Y.",
+      "short": "Corrected in course.",
+      "character": "An interrupted or faulty course becomes properly executable across its essential stages. Repair is accomplished as restored operation through the process, rather than as a sound diagram of it.",
+      "investigation": null
+    },
+    {
+      "id": 34,
+      "name": "Limit reset",
+      "transformation": "Repair",
+      "topology": "Release",
+      "persistence": "Standing",
+      "xy": "X redefines its limits as Y.",
+      "short": "A better limit.",
+      "character": "A governing error loses its power to organise the result, allowing a sound determination to stand. Repair is complete as the corrected basis or limit, rather than as endless compensation within the erroneous arrangement.",
+      "investigation": null
+    },
+    {
+      "id": 35,
+      "name": "Condition reversal",
+      "transformation": "Repair",
+      "topology": "Release",
+      "persistence": "Bearing",
+      "xy": "X is resolved by reversing into Y.",
+      "short": "Reverse when this holds.",
+      "character": "Adequacy is restored through the actual requirement after a misleading rule or assumed necessity loses governance. The repaired reality is a fit whose positive criterion displaces the basis of the former misfit.",
+      "investigation": null
+    },
+    {
+      "id": 36,
+      "name": "Disorder released",
+      "transformation": "Repair",
+      "topology": "Release",
+      "persistence": "Efficacy",
+      "xy": "X returns from disorder into Y.",
+      "short": "Free of the fault.",
+      "character": "Proper functioning becomes independent of the fault and the compensations it had forced. The achievement is operation whose course the former disorder no longer dictates.",
+      "investigation": null
+    },
+    {
+      "id": 37,
+      "name": "Focal whole",
+      "transformation": "Integration",
+      "topology": "Focal",
+      "persistence": "Standing",
+      "xy": "X and Y form a functional unit.",
+      "short": "One whole.",
+      "character": "Separate elements acquire determinate membership and roles as one organisation gathered around a constitutive centre. The achieved reality is that centred whole, not simply a collection with a prominent member.",
+      "investigation": null
+    },
+    {
+      "id": 38,
+      "name": "Frame-held whole",
+      "transformation": "Integration",
+      "topology": "Focal",
+      "persistence": "Bearing",
+      "xy": "X and Y collapse into one interpretive frame.",
+      "short": "Held as one.",
+      "character": "Parts acquire unity through their indispensable common bearing upon a frame, anchor, or support. What is achieved is a held whole: its coherence is constituted through that focal bearing.",
+      "investigation": null
+    },
+    {
+      "id": 39,
+      "name": "Joint capacity",
+      "transformation": "Integration",
+      "topology": "Focal",
+      "persistence": "Efficacy",
+      "xy": "X and Y interlock to form system Z.",
+      "short": "Together able.",
+      "character": "Separate contributions acquire a joint capacity through a coordinating centre. Integration is accomplished as the centred whole’s ability to act, rather than as its arrangement alone.",
+      "investigation": null
+    },
+    {
+      "id": 40,
+      "name": "Role array",
+      "transformation": "Integration",
+      "topology": "Distributed",
+      "persistence": "Standing",
+      "xy": "X aligns within structural matrix Y.",
+      "short": "Each in its place.",
+      "character": "Parts acquire a determinate organisation as the roles of an articulated whole. The achievement is the whole’s differentiated composition, established across its structure.",
+      "investigation": null
+    },
+    {
+      "id": 41,
+      "name": "Mutual-support structure",
+      "transformation": "Integration",
+      "topology": "Distributed",
+      "persistence": "Bearing",
+      "xy": "X and Y support one another’s constraints.",
+      "short": "Held through each other.",
+      "character": "Parts become one coherent organisation through their sustaining bearings upon one another. The whole exists as an interdependent structure, rather than as a collection whose unity can be supplied externally.",
+      "investigation": null
+    },
+    {
+      "id": 42,
+      "name": "Role activation",
+      "transformation": "Integration",
+      "topology": "Distributed",
+      "persistence": "Efficacy",
+      "xy": "X fills its role within system Y.",
+      "short": "In operation.",
+      "character": "Complementary roles acquire the capacity for joint performance across an organisation. The achieved integration is coordinated competence, not merely agreed membership or mutual dependence.",
+      "investigation": null
+    },
+    {
+      "id": 43,
+      "name": "Self-maintaining equilibrium",
+      "transformation": "Integration",
+      "topology": "Release",
+      "persistence": "Standing",
+      "xy": "X meets equalizing forces from Y.",
+      "short": "Able to remain.",
+      "character": "A determinate whole takes shape when divisions that formerly dictated separation cease to govern its organisation. The achievement is an established unity beyond that fragmenting basis.",
+      "investigation": null
+    },
+    {
+      "id": 44,
+      "name": "Sustained equilibrium",
+      "transformation": "Integration",
+      "topology": "Release",
+      "persistence": "Bearing",
+      "xy": "X and Y oscillate into stability.",
+      "short": "Tension that holds.",
+      "character": "Unity becomes constituted through actual sustaining bonds after inherited divisions cease to determine belonging. The whole remains a held coherence, but the old separations no longer decide its membership.",
+      "investigation": null
+    },
+    {
+      "id": 45,
+      "name": "Convergent whole",
+      "transformation": "Integration",
+      "topology": "Release",
+      "persistence": "Efficacy",
+      "xy": "X approaches final Y regardless of origin.",
+      "short": "Many become one act.",
+      "character": "Fragmented contributions become one executable undertaking when separate claims to control cease to dictate their organisation. The completion is joint action whose unity the former divisions cannot fragment.",
+      "investigation": null
+    },
+    {
+      "id": 46,
+      "name": "Settled alternative",
+      "transformation": "Settlement",
+      "topology": "Focal",
+      "persistence": "Standing",
+      "xy": "X is affirmed as Y with no alternatives.",
+      "short": "Chosen.",
+      "character": "A live demand converges on a definite answer or choice that discharges it. The achieved reality is the determination that settles this matter at its decisive point.",
+      "investigation": null
+    },
+    {
+      "id": 47,
+      "name": "Unified settlement",
+      "transformation": "Settlement",
+      "topology": "Focal",
+      "persistence": "Bearing",
+      "xy": "X becomes indistinguishable from Y.",
+      "short": "Together now.",
+      "character": "A particular matter becomes settled through the terms, commitment, or condition that constitutes closure. Its achieved status is settlement-under-that-bearing rather than an unconditional answer.",
+      "investigation": null
+    },
+    {
+      "id": 48,
+      "name": "Path completion",
+      "transformation": "Settlement",
+      "topology": "Focal",
+      "persistence": "Efficacy",
+      "xy": "X arrives at final Y.",
+      "short": "Arrived.",
+      "character": "An unresolved demand is discharged in a decisive arrival, instruction, or action that determines continuation. Settlement is accomplished as the end of the need to seek or choose at that locus.",
+      "investigation": null
+    },
+    {
+      "id": 49,
+      "name": "Recurrence settlement",
+      "transformation": "Settlement",
+      "topology": "Distributed",
+      "persistence": "Standing",
+      "xy": "X regularly leads to Y.",
+      "short": "It returns.",
+      "character": "A plurality of outstanding demands is discharged in a complete answering account or resolved course. Closure belongs to the relevant range and its interconnections, rather than to one terminal answer.",
+      "investigation": null
+    },
+    {
+      "id": 50,
+      "name": "Condition-bound settlement",
+      "transformation": "Settlement",
+      "topology": "Distributed",
+      "persistence": "Bearing",
+      "xy": "X always implies Y under valid conditions.",
+      "short": "Settled if.",
+      "character": "A field of claims becomes settled through the conditions and recognitions that constitute closure across it. The achieved settlement is a supported pattern of closure, not merely a list of final answers.",
+      "investigation": null
+    },
+    {
+      "id": 51,
+      "name": "Case settlement",
+      "transformation": "Settlement",
+      "topology": "Distributed",
+      "persistence": "Efficacy",
+      "xy": "X typically produces Y across cases.",
+      "short": "Settled across the cases.",
+      "character": "Unresolved demands across an undertaking are discharged as an executable course of continuation. The achievement is a settled practice or procedure that does not leave the requisite next moves undecided.",
+      "investigation": null
+    },
+    {
+      "id": 52,
+      "name": "Transformation release",
+      "transformation": "Settlement",
+      "topology": "Release",
+      "persistence": "Standing",
+      "xy": "X remains Y under all transformations.",
+      "short": "Still itself.",
+      "character": "Definite closure becomes available when a remainder ceases to require further adjudication. What persists is the settled determination, despite objections, variation, or incompleteness that no longer governs whether the matter must remain open.",
+      "investigation": null
+    },
+    {
+      "id": 53,
+      "name": "Retrospective settlement",
+      "transformation": "Settlement",
+      "topology": "Release",
+      "persistence": "Bearing",
+      "xy": "X reinterprets earlier states as Y.",
+      "short": "Now it makes sense.",
+      "character": "A demand for further explanation, accounting, or redress loses force through a constitutive reconnection. Closure exists through the bearing that makes the remaining material intelligible or the former claim discharged.",
+      "investigation": null
+    },
+    {
+      "id": 54,
+      "name": "Continuation discharge",
+      "transformation": "Settlement",
+      "topology": "Release",
+      "persistence": "Efficacy",
+      "xy": "X settles completely into Y.",
+      "short": "Nothing further is owed.",
+      "character": "Continuation becomes free of a demand that had required return, repetition, or further uptake. Settlement is accomplished as the ability to proceed without that unfinished matter governing the next move.",
+      "investigation": null
+    }
+  ],
+  "investigations": [
+    {
+      "id": "cell-23-first-investigation",
+      "date": "2026-11-22",
+      "cell": 23,
+      "title": "Reciprocal shift: recognising correspondence before naming it",
+      "status": "First investigation; proposed examples and distinctions are open to further testing",
+      "source": "Original X–Y traversal and cell characterisation in THE_54_COMPLETE_REFERENCE_TABLE.md; canonical identity in THE_54_CONTROL.md; two opening examples in the curator’s commission.",
+      "identity": "Relating × Distributed × Bearing",
+      "xy": "X changes in response to Y.",
+      "short": "Each changes the other.",
+      "candidate": "As X varies, so Y varies.",
+      "insight": "The promising invariant is a determination held through the correspondence of variation. The terms are intelligible in relation to one another across a field; their bearing is not an extra comment attached after each has been understood independently. The proposed ‘as … so’ expression can make this visible, but it may also describe one-way covariance. It is therefore a recognition aid, not a replacement for the original traversal or a proof of strict two-way causation.",
+      "threeQuestions": [
+        {
+          "q": "What changed?",
+          "a": "Two varying terms that might have been noticed separately become intelligibly connected as corresponding variations."
+        },
+        {
+          "q": "What made the change sufficient?",
+          "a": "A determinate, contextually justified pattern of bearing across the relevant cases—not the mere repetition of the word ‘as’."
+        },
+        {
+          "q": "How does the achievement remain available?",
+          "a": "Through the relation constituting how the terms count, vary or are positioned in that field."
+        }
+      ],
+      "examples": [
+        {
+          "scene": "Physics",
+          "sentence": "As the temperature increased, the pressure increased.",
+          "note": "Promising when the fixed-volume conditions and observed relation are supplied; the sentence alone cannot establish its physical basis."
+        },
+        {
+          "scene": "Embodied life",
+          "sentence": "The longer the day went on, the more my feet hurt.",
+          "note": "A lived progression and the changing felt burden can be recognised in correspondence without sharing the physics sentence’s meaning."
+        },
+        {
+          "scene": "Cooking",
+          "sentence": "The longer the onions cooked, the sweeter they tasted.",
+          "note": "An ordinary graded dependency; test whether the cooking circumstances make the bearing determinate."
+        },
+        {
+          "scene": "Music",
+          "sentence": "As the drummer quickened the beat, the dancers quickened their steps.",
+          "note": "Tempo and movement stand in correspondence, though the example may also be read as a one-way response; a useful boundary test."
+        },
+        {
+          "scene": "Gardening",
+          "sentence": "As the soil dried, the leaves drooped.",
+          "note": "A possible observed dependence; other causes must be considered before assigning the governing achievement."
+        }
+      ],
+      "neighbors": [
+        {
+          "cell": 22,
+          "name": "Sequential link · Relating × Distributed × Standing",
+          "contrast": "‘First the bell rang; then the room emptied’ establishes an ordered arrangement. Sequence alone does not make the positions constitutively varying together."
+        },
+        {
+          "cell": 24,
+          "name": "Relational cycle · Relating × Distributed × Efficacy",
+          "contrast": "‘The thermostat sensed the heat and switched the heater off; cooling eventually switched it on again’ presents operative feedback and continuation, not just a held correspondence."
+        },
+        {
+          "cell": 20,
+          "name": "Pivoted balance · Relating × Focal × Bearing",
+          "contrast": "‘The seesaw balanced around its fulcrum’ makes a privileged pivot constitutive; Cell 23 requires a distributed field rather than one decisive locus."
+        },
+        {
+          "cell": 25,
+          "name": "Pattern alignment · Relating × Release × Standing",
+          "contrast": "‘These two charts preserve the same arrangement even after the labels change’ stresses invariance despite a once-governing presentation difference, not a co-varying bearing."
+        }
+      ],
+      "pedagogy": "Begin with the temperature/pressure and feet/day sentences without a cell name. Ask learners what was achieved in each, and then what persists across their different meanings. Introduce ‘As … so’ only after they notice correspondence; next reveal the original X–Y traversal and Relating × Distributed × Bearing, then compare with 22 and 24. A useful diagnostic is whether the learner can explain why ‘First X, then Y’ and ‘X drives a feedback loop’ are not automatically the same achievement. This is a proposal for a teaching test, not an observed learner outcome.",
+      "openQuestions": [
+        "Does ‘As X varies, so Y varies’ reliably reveal Bearing, or does it sometimes reduce the cell to covariance?",
+        "When is an apparent variation correspondence only an incidental sequence or a shared external cause?",
+        "What examples expose the boundary between a constitutive distributed bearing and an operative feedback cycle?"
+      ]
+    }
+  ]
+}
