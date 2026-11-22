@@ -13,7 +13,14 @@ button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-vis
 .navrow{display:flex;justify-content:center;align-items:center;gap:17px;margin:35px auto 15px}.navbtn{border-radius:999px;border:1px solid #c7d4ce;background:#fffdf8;width:54px;height:54px;font:32px/1 var(--serif);color:#245b5a}.navbtn:hover{background:var(--tint)}.navbtn:disabled{opacity:.27;cursor:not-allowed}.navhint{font-size:12px;color:var(--muted);text-align:center;min-width:145px}.help{max-width:920px;margin:30px auto 70px;border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}.help p{font-size:12px;color:var(--muted);max-width:570px;margin:0}.help a{font-size:12px;font-weight:700;color:var(--accent)}.status{font-size:12px;color:var(--accent);min-height:18px}.hiddenfile{display:none}
 @media(max-width:660px){.mast{align-items:flex-start;flex-direction:column}.hero{padding:23px 0}.card{min-height:620px}.face{padding:24px}.card h2{margin-top:18px}.card .divider{margin:17px 0}.back .field{margin-top:9px}.back .field textarea{min-height:60px}.deck-shell:before,.deck-shell:after{left:12px;right:12px}.tools input{max-width:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.number{transition:none}}
+
+/* Floating golden entrance to the ongoing study */
+.study-orb{position:fixed;right:22px;bottom:25px;z-index:50;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;text-align:center;text-decoration:none;color:#553910;font:800 10px/1.12 var(--sans);letter-spacing:.04em;background:radial-gradient(circle at 29% 24%,#fff9cf 0%,#f6d67d 27%,#d9a53e 63%,#a66c1e 100%);border:2px solid #fbe7a5;box-shadow:0 3px 0 #93601d,0 15px 34px #6d4b1760,inset 0 3px 10px #ffffff9a;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;transition:box-shadow .16s,filter .16s}
+.study-orb:hover{box-shadow:0 3px 0 #93601d,0 17px 40px #6d4b1785,inset 0 3px 10px #ffffffc0;filter:saturate(1.13)}.study-orb:active{cursor:grabbing}
+.study-orb:focus-visible{outline:4px solid #1a787a;outline-offset:4px}.study-orb .orb-star{position:absolute;left:13px;top:7px;font-size:12px;opacity:.8}.study-orb .orb-label{position:relative;margin-top:6px}
+@media(max-width:600px){.study-orb{width:58px;height:58px;right:14px;bottom:17px}}
 </style></head><body>
+<a id="study-orb" class="study-orb" href="study.html" draggable="false" aria-label="Open the ongoing study — drag this golden ball to move it" title="The Ongoing Study · drag to move, tap to open"><span class="orb-star" aria-hidden="true">✦</span><span class="orb-label">THE<br>STUDY</span></a>
 <div class="wrap">
 <nav class="mast"><a class="brand" href="./">Wonder <span style="color:#137e81">/ The 54</span></a><div class="mastlinks"><a href="https://titanicparker.github.io/">Museum</a><a href="https://github.com/TitanicParker/wonder/blob/main/fiche_ceathar_54_open_cards.md">Source Markdown</a><a href="https://github.com/TitanicParker/fiche-ceathar">Fiche Ceathar</a></div></nav>
 <header class="hero"><span class="eyebrow">A living collection of completed intelligibility</span><h1>Wonder.</h1><p>Fifty-four forms. Fifty-four places to look again. Turn the cards over, follow an unexpected example, and write whatever you discover.</p></header>
@@ -53,4 +60,20 @@ $('import').onclick=()=>$('importfile').click();$('importfile').onchange=async e
 $('exportmd').onclick=()=>{let out='# Wonder — The 54 Open Cards · My Explorations\n\n';for(const e of data){out+='## '+name(e)+' — '+e.name+'\n\n**Triaxial identity:** '+e.triaxial+'\n\n**Original X–Y traversal:** '+e.xy+'\n\n**Ultra-short form:** '+e.ultra+'\n\n**Companion phrase:** '+e.companion+'\n\n';for(const [field,label] of [['impression','First impression'],['ordinary','Ordinary sentence'],['unexpected','Unexpected example'],['invariant','What stays invariant'],['neighbor','Neighbouring distinction'],['questions','Questions and surprises']])out+='**'+label+':** '+(record(e.id)[field]||'')+'\n\n';out+='---\n\n'}download('wonder-54-explorations.md',out,'text/markdown')};
 window.addEventListener('hashchange',()=>{const n=parseInt(location.hash.replace('#cell-',''),10);if(n>=1&&n<=54&&n!==active)go(n)});render();flip(false);
 })();
-</script></body></html>
+</script>
+<script>
+(()=>{'use strict';
+const orb=document.getElementById('study-orb'),key='wonder-gold-orb-position-v1';
+function clamp(x,min,max){return Math.max(min,Math.min(max,x))}
+function place(x,y){const w=orb.offsetWidth,h=orb.offsetHeight;orb.style.right='auto';orb.style.bottom='auto';orb.style.left=clamp(x,6,innerWidth-w-6)+'px';orb.style.top=clamp(y,6,innerHeight-h-6)+'px'}
+try{const pos=JSON.parse(localStorage.getItem(key)||'null');if(pos&&Number.isFinite(pos.x)&&Number.isFinite(pos.y))place(pos.x*(innerWidth-orb.offsetWidth),pos.y*(innerHeight-orb.offsetHeight))}catch(e){}
+let down=null,moved=false,suppress=false;
+orb.addEventListener('pointerdown',e=>{if(e.button!==0&&e.pointerType==='mouse')return;const rect=orb.getBoundingClientRect();down={x:e.clientX,y:e.clientY,left:rect.left,top:rect.top};moved=false;orb.setPointerCapture(e.pointerId)});
+orb.addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-down.x,dy=e.clientY-down.y;if(!moved&&Math.hypot(dx,dy)>7)moved=true;if(moved){e.preventDefault();place(down.left+dx,down.top+dy)}});
+orb.addEventListener('pointerup',e=>{if(!down)return;if(moved){suppress=true;try{const rect=orb.getBoundingClientRect();localStorage.setItem(key,JSON.stringify({x:rect.left/Math.max(1,innerWidth-rect.width),y:rect.top/Math.max(1,innerHeight-rect.height)}))}catch(err){}}down=null});
+orb.addEventListener('pointercancel',()=>{down=null});
+orb.addEventListener('click',e=>{if(suppress){e.preventDefault();suppress=false}});
+addEventListener('resize',()=>{const rect=orb.getBoundingClientRect();if(orb.style.left)place(rect.left,rect.top)});
+})();
+</script>
+</body></html>
