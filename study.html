@@ -16,11 +16,13 @@ a{color:inherit}button,input,textarea{font:inherit}button{cursor:pointer}button:
 .entries{margin:26px 0 100px}.entry{position:relative;border-left:2px solid #cbaa68;padding:19px 0 26px 32px;margin:0 0 8px}.entry:before{content:'';position:absolute;width:12px;height:12px;border:2px solid var(--paper);border-radius:50%;background:var(--gold);left:-7px;top:30px}.entryhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.date{font:700 11px var(--sans);letter-spacing:.13em;text-transform:uppercase;color:#9b742e}.remove{background:none;border:0;font:650 12px var(--sans);color:#93685b;text-decoration:underline}.title{display:block;width:100%;border:0;background:transparent;font:400 clamp(27px,4vw,39px)/1.3 var(--serif);color:var(--ink);padding:5px 0 12px;outline-offset:3px}.title::placeholder{color:#aba89d}.body{display:block;width:100%;min-height:190px;resize:vertical;border:1px solid var(--line);background:#fffdf9;color:var(--ink);border-radius:16px;padding:21px 22px;font:17px/1.8 var(--serif)}.body::placeholder{color:#9b9e9c}.entrynote{font-size:11px;color:var(--muted);margin-top:9px}
 .foot{border-top:1px solid var(--line);padding:25px 0 50px;color:var(--muted);font-size:12px}.foot p{max-width:700px}
 @media(max-width:600px){.hero{padding:38px 0}.toolbar{position:static}.entry{padding-left:22px}.body{padding:16px}.count{margin-left:0}}
+
+.mission,.curated{border:1px solid var(--line);border-radius:20px;background:var(--soft);padding:clamp(20px,4vw,36px);margin:27px 0}.mission h2,.curated h2{font:400 clamp(31px,5vw,47px)/1.13 var(--serif);margin:12px 0}.mission p{max-width:780px;margin:10px 0}.curated-intro,.source-desc{color:var(--muted)}.curated h3{font:400 30px var(--serif);margin:32px 0 13px}.curated h4{font:600 20px var(--serif);margin:22px 0 8px}.curated a{color:#805918}.curated details{border-top:1px solid var(--line);padding:12px 0}.curated summary{cursor:pointer;font-weight:650}.curated summary:hover{color:#805918}.curated .meta{font-size:13px;color:var(--muted)}.curated .example{padding:10px 15px;border-left:3px solid var(--gold);margin:10px 0;background:#f8f2e4}.curated .cell-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:7px 18px}.curated .cell-grid a{display:block;padding:7px 0}.curated .definition{padding:9px 0;border-bottom:1px solid #eee4d2}.curated .source{margin:10px 0}.curated .reading{max-width:75ch}.private-heading{margin:40px 0 8px;font:400 38px var(--serif)}
 </style></head>
 <body><div class="wrap">
 <nav class="top"><a class="brand" href="./">Wonder / The 54</a><div><a href="./">← Return to the cards</a> &nbsp; <a href="https://github.com/TitanicParker/wonder">Repository</a></div></nav>
-<header class="hero"><div class="eyebrow">The centre of study · An open document</div><h1>The Ongoing<br>Study.</h1><p>A place to keep looking. No final page, no compulsory conclusion. Add an observation, a question, a sentence, a structural discovery — and continue.</p></header>
-<div class="toolbar" role="toolbar" aria-label="Study controls">
+<section class="mission" aria-labelledby="mission-heading"><div class="eyebrow">The curator’s mission</div><h2 id="mission-heading">Why Wonder exists</h2><p>Wonder exists to discover what becomes visible when intelligibility itself becomes the subject of sustained attention.</p><p>Its purpose is to investigate the fifty-four forms of completed intelligibility through their canonical definitions, triaxial identities, X–Y traversals, ordinary examples, unexpected correspondences and neighbouring distinctions.</p><p><strong>Wonder is a living study, not a finished explanation.</strong></p><p>Its method is inseparable from its subject: <em>What changed? What made that change sufficient? How does the achievement remain available?</em></p><p>Its goal is to become increasingly capable of recognising intelligibility in its own right, and to make that recognition available to others.</p></section><header class="hero"><div class="eyebrow">The centre of study · An open document</div><h1>The Ongoing<br>Study.</h1><p>A place to keep looking. No final page, no compulsory conclusion. Add an observation, a question, a sentence, a structural discovery — and continue.</p></header>
+<section id="curated" class="curated" aria-labelledby="curated-heading"><h2 id="curated-heading">The public curated study</h2><p class="curated-intro">Published investigations are shared by everyone and maintained in <a href="curated-study.json">repository-backed source data</a>. Your private notebook continues below.</p><div id="curated-content" role="status">Loading the published study…</div></section><h2 class="private-heading" id="private-heading">Your private notebook</h2><div class="toolbar" role="toolbar" aria-label="Study controls">
 <button id="add" class="btn primary" type="button">＋ Add a passage</button>
 <button id="exportmd" class="btn" type="button">Export Markdown ↓</button>
 <button id="exportjson" class="btn" type="button">Back up JSON ↓</button>
@@ -28,9 +30,40 @@ a{color:inherit}button,input,textarea{font:inherit}button{cursor:pointer}button:
 <input type="file" accept=".json,application/json" id="importfile">
 <span class="count" id="count">0 passages</span><span class="status" id="status" role="status"></span>
 </div>
-<main id="main"><div id="empty" class="empty"><span>The first page is open.</span><p>This study begins wherever you choose. Use <strong>Add a passage</strong> to write its first entry.</p></div><div class="entries" id="entries" aria-label="Ongoing study passages"></div></main>
-<footer class="foot"><p>Passages save in this browser on this device. They do not automatically publish to GitHub or synchronise elsewhere. Export Markdown to preserve the study as a document, and export JSON to back it up for later editing or transfer between browsers.</p></footer>
+<main id="main" aria-labelledby="private-heading"><div id="empty" class="empty"><span>The first page is open.</span><p>This study begins wherever you choose. Use <strong>Add a passage</strong> to write its first entry.</p></div><div class="entries" id="entries" aria-label="Ongoing study passages"></div></main>
+<footer class="foot"><p>Private passages save in this browser on this device. Published curator investigations are read from curated-study.json and cannot be edited through this notebook. They do not automatically publish to GitHub or synchronise elsewhere. Export Markdown to preserve the study as a document, and export JSON to back it up for later editing or transfer between browsers.</p></footer>
 </div>
+<script>
+(()=>{'use strict';
+const root=document.getElementById('curated-content');
+const node=(tag,content,parent,cls)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(content!=null)el.textContent=content;if(parent)parent.appendChild(el);return el};
+const link=(parent,label,url)=>{const a=node('a',label,parent);a.href=url;return a};
+function para(p,s){return node('p',s,p,'reading')}
+function subsection(parent,title){return node('h3',title,parent)}
+fetch('curated-study.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{
+if(data.schema!=='wonder-curated-study-v1'||!Array.isArray(data.cells)||data.cells.length!==54||!Array.isArray(data.definitions)||data.definitions.length!==15)throw Error('Invalid curated source');
+root.replaceChildren();
+para(root,data.discipline);
+subsection(root,'Sources and their authority');
+for(const s of data.sources){const d=node('div',null,root,'source');node('strong',s.kind+': ',d);link(d,s.title,s.url);node('span',' — '+s.use,d,'source-desc')}
+subsection(root,'The fifteen canonical definitions');
+para(root,'Quoted from THE_54_CONTROL.md. These are the three dimension definitions and their twelve values, not fifteen separate cells.');
+for(const d of data.definitions){const p=node('div',null,root,'definition');node('strong',d.name+' — ',p);node('span',d.definition,p)}
+subsection(root,'The 54 · canonical addresses');
+para(root,'Each numbered entry preserves its canonical name and coordinates. Its original X–Y traversal and structural character are presented as historically aligned formulations, not substitutes for the canonical definitions.');
+const groups=node('div',null,root);
+for(const family of [...new Set(data.cells.map(c=>c.transformation))]){const group=node('details',null,groups);group.open=family==='Relating';node('summary',family+' · 9 cells',group);const grid=node('div',null,group,'cell-grid');for(const c of data.cells.filter(x=>x.transformation===family)){link(grid,String(c.id).padStart(2,'0')+' · '+c.name,'#cell-'+c.id)}}
+for(const c of data.cells){const details=node('details',null,root);details.id='cell-'+c.id;details.open=c.id===23;node('summary',String(c.id).padStart(2,'0')+' · '+c.name,details);para(details,c.transformation+' × '+c.topology+' × '+c.persistence);para(details,'Original X–Y: '+c.xy);para(details,'Minimal short form: '+c.short);para(details,'Reference characterisation: '+c.character);if(c.investigation)link(details,'Read the investigation below','#'+c.investigation)}
+subsection(root,'Investigations and discoveries');
+for(const inv of data.investigations){const a=node('article',null,root);a.id=inv.id;node('h4',inv.title,a);node('div',inv.date+' · Cell '+inv.cell+' · '+inv.status,a,'meta');para(a,'Prompting sources: '+inv.source);para(a,inv.insight);node('h4','The two formulations',a);para(a,'Original X–Y: '+inv.xy);para(a,'Proposed recognition aid: '+inv.candidate);para(a,'Triaxial identity: '+inv.identity);node('h4','The three questions',a);for(const q of inv.threeQuestions){const p=node('p',null,a,'reading');node('strong',q.q+' ',p);node('span',q.a,p)}
+node('h4','Ordinary examples and boundary tests',a);for(const e of inv.examples){const p=node('div',null,a,'example');node('strong',e.scene+': ',p);node('span',e.sentence,p);para(p,e.note)}
+node('h4','Neighbouring distinctions',a);for(const n of inv.neighbors){const p=node('p',null,a,'reading');link(p,'Cell '+n.cell+' · '+n.name,'#cell-'+n.cell);node('span',' — '+n.contrast,p)}
+node('h4','Pedagogical experiment',a);para(a,inv.pedagogy);node('h4','Open questions',a);const ul=node('ul',null,a);for(const question of inv.openQuestions)node('li',question,ul)}
+root.removeAttribute('role');
+if(location.hash&&location.hash.startsWith('#cell-')){const target=document.querySelector(location.hash);if(target&&target.tagName==='DETAILS')target.open=true}
+}).catch(err=>{root.textContent='The curated repository study could not be loaded: '+err.message+'. ';link(root,'Read the source on GitHub','https://github.com/TitanicParker/wonder/blob/main/curated-study.json')});
+})();
+</script>
 <script>
 (()=>{'use strict';
 const $=id=>document.getElementById(id),key='wonder-ongoing-study-v1';let passages=[];
