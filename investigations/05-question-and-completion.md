@@ -85,6 +85,75 @@ Wonder currently preserves ten constructed sentences for each of the 54 cells. U
 
 No blind runs have yet been performed for this investigation. Keep the question and answer frozen before adjudication, and retain disagreements as evidence.
 
+## New development — from the 54 answer forms to 54 question forms
+
+**24 November 2026 · General-form investigation · A step towards knowing the 54 more closely**
+
+The study has reached a more precise possibility. We already possess fifty-four canonical forms of **completed** intelligibility. Instead of beginning with the grammatical interrogatives *who, what, when, where, how* and *why*, we can begin with those established answer forms and ask what **characteristic demand for sufficiency** would call for each one.
+
+This is not the invention of another set of fifty-four primitives. It is a proposed reversal of view within the same grammar:
+
+1. Begin with the existing canonical cell and its unified completed achievement.
+2. Articulate, without choosing a subject matter, what makes that achievement sufficient.
+3. Ask what remains unresolved **until just such a sufficiency is available**.
+4. Formulate a general question that makes that particular demand recognisable.
+5. Return from question to completion and inspect whether the demand really anticipates the intended achievement, or whether neighbouring completions could satisfy it equally well.
+
+A characteristic question is **not necessarily a unique question**, a historically spoken question, or an algorithmically reversible encoding. A single question can admit several structurally different sufficient answers. Similarly, a completed utterance can answer more than one governing requirement in different contexts. The research question is whether every cell can sustain a useful, discriminating *general interrogative counterpart*.
+
+### An initial six-family vocabulary of demands
+
+| Completed transformation | Provisional characteristic question |
+| --- | --- |
+| Differentiation | Which is which? |
+| Opening | What is possible? |
+| Relating | What bears on what? |
+| Repair | What would put it right? |
+| Integration | How do these belong together? |
+| Settlement | What would be enough? |
+
+These are entrances to the six families, **not** definitions of them. The interrogative word alone does not determine the Transformation Pattern. For example, *How can I get inside?*, *How are they related?*, *How can I fix it?*, *How do the parts work together?*, *How was it settled?*, and *How can I distinguish them?* all begin with *how* yet articulate different demands. The whole question, rather than a word extracted from it, gives the unresolvedness its shape.
+
+### Three neighbouring cells, viewed from both sides
+
+| Cell | General completion | Candidate general question |
+| --- | --- | --- |
+| **01 — Focal mark** | A particular is determinately distinguished at one constitutive locus; its determination stands. | What is this particular thing? |
+| **02 — Binary bearing** | A particular is distinguished through a constitutive contrast on which its determination bears. | Which is this, in distinction from that? |
+| **03 — Boundary act** | A distinction is completed at a decisive locus as an operative discrimination. | At what boundary does this difference become decisive for what may proceed? |
+
+The questions are deliberately about **what would be enough**, not about a preferred topic or a particular story. They are preliminary: an apparently suitable question may also be answered by another cell. The test of quality is whether it exposes the cell's distinctive sufficient achievement rather than merely repeating its name.
+
+The same reversal can be attempted beyond Differentiation:
+
+| Cell | General completion | Candidate general question |
+| --- | --- | --- |
+| **37 — Focal whole** | Separate contributions belong to one whole through a constitutive centre. | What makes these contributions one whole around this centre? |
+| **40 — Role array** | A whole is constituted across differentiated positions or roles. | How do these distinct positions together constitute the whole? |
+| **45 — Convergent whole** | Separate undertakings become one operative undertaking when their independent claims to govern no longer determine action. | What has made these formerly separate undertakings capable of acting as one, beyond their competing claims? |
+
+For Cell 45, merely asking what *would allow* joint action could elicit a proposal without an achieved integration. The question form must be considered in relation to whether it demands an accomplished whole, an explanation of such a whole, or a merely possible means to produce one.
+
+### Three analytically different objects
+
+**The question as a completed utterance:** asking itself establishes a determinate inquiry. Its intelligibility can be complete while the answer remains open.
+
+**The completion demanded by the question:** the structural sufficiency that would answer the inquiry appropriately.
+
+**The answer as a completed utterance:** what the actual words achieve, which may be sufficient, partial, or differently organised from what the question anticipated.
+
+These must not be collapsed into a single cell. Recovering a question can expose the governing requirement without independently revealing the internal sufficiency organisation of every possible answer. The distinction makes the proposed reversal philosophically useful rather than merely a mechanical transformation.
+
+### The Wonder study programme
+
+The next research instrument is a **provisional 54-row question-form companion**, one row for each existing cell, preserving the canonical form on one side and an independently intelligible characteristic question on the other. This is a general-form study first, not the automatic addition of 540 questions to the sentence gallery.
+
+For each candidate, test a neighbouring rival and ask whether the question actually demands the relevant sufficiency. Only then use Wonder's varied ordinary sentences to explore how the same general demand appears in different worlds. Record ambiguous, shared, and non-unique question forms rather than force one-to-one correspondence.
+
+The result sought is greater familiarity with the internal character of all fifty-four forms: not only **how each completed achievement holds together**, but **what particular unresolvedness could call for it**.
+
+**Working proposition:** The canonical completion form discloses what can become sufficient. Its characteristic question form discloses the demand for that sufficiency. Their relation is an object of study, not yet a proven equivalence.
+
 ## Open questions
 
 1. Can the form of a demand constrain all three dimensions of its anticipated completion, or only some of them?
