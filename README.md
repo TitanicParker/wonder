@@ -25,3 +25,7 @@ The goal is not merely to accumulate information about intelligibility.
 **It is to become increasingly capable of recognising intelligibility in its own right, and to make that recognition available to others.**
 
 Wonder is an invitation to look again.
+
+## Complete corpus
+
+The full, source-free 54-cell corpus is available in [`FICHE_CEATHAR_COMPLETE_54_CLEAN.md`](FICHE_CEATHAR_COMPLETE_54_CLEAN.md). Read it cell by cell in the [complete corpus reader](https://titanicparker.github.io/wonder/corpus.html), with direct links from each living card. It preserves the fifteen canonical definitions, collected examples, structural signatures, and three cycles of dialogues.
