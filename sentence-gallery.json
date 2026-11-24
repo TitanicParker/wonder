@@ -1,6 +1,6 @@
 {
   "title": "Wonder — constructed sentence gallery",
-  "description": "Three additional cross-domain candidate sentences for each cell, designed from the structural signatures. Interpretive teaching examples, not canon. Expand and curate over time.",
+  "description": "Additional cross-domain candidate sentences designed from the structural signatures. Interpretive teaching examples, not canon. Expand and curate over time.",
   "examples": {
     "10": [
       "A small doorway behind the tapestry gave access to the sealed chamber.",
@@ -230,47 +230,71 @@
     "01": [
       "At the bottom of the drawer lay the missing wedding ring.",
       "The tiny bird on the fence is a wren.",
-      "The shape in the photograph is the old lighthouse."
+      "The shape in the photograph is the old lighthouse.",
+      "That feeling you've been trying to describe has a name: homesickness.",
+      "The little mark above the letter is an acute accent.",
+      "That's where the rain is getting in."
     ],
     "02": [
       "Of all the jars on the shelf, only the one with the red lid contained honey.",
       "In that otherwise silent room, the smallest cough sounded thunderous.",
-      "Against the black sand, the white shell was impossible to miss."
+      "Against the black sand, the white shell was impossible to miss.",
+      "Everyone else remembered the occasion, but she remembered the date.",
+      "Against the sweetness of the peaches, the bitterness of the almond really stands out.",
+      "Of all the people asking for his attention, she was the only one who asked how he was."
     ],
     "03": [
       "The scanner opens the door only when the badge number matches.",
       "At exactly zero degrees, the warning light switches on.",
-      "One wrong note triggers the piano's automatic stop."
+      "One wrong note triggers the piano's automatic stop.",
+      "You're old enough to go swimming without an adult now.",
+      "Anything over fifty euro needs both our signatures.",
+      "Only photographs taken before 1950 qualify for the exhibition."
     ],
     "04": [
       "The map separated the forest into wetland, pinewood, meadow and scrub.",
       "The museum catalogue distinguished the collection by century and region.",
-      "Across the orchard, the trees formed four recognisable varieties."
+      "Across the orchard, the trees formed four recognisable varieties.",
+      "There are three distinct periods in my childhood: before we moved, our years abroad and the years after we came home.",
+      "My sleep diary reveals three recurring difficulties: falling asleep, waking during the night and waking too early.",
+      "What the narrator remembers, what she imagines and what actually happens are three distinct strands of the novel."
     ],
     "05": [
       "Among professional runners, his fast time was ordinary.",
       "The colour looked grey beside snow but almost white against charcoal.",
-      "In that tiny village, a modest library was an enormous institution."
+      "In that tiny village, a modest library was an enormous institution.",
+      "At home she's the youngest, but among her school friends she's the oldest.",
+      "Five euro is pocket change at the airport and enough for lunch in the school canteen.",
+      "Ten minutes is a long wait for a lift and a very short visit with an old friend."
     ],
     "06": [
       "A nurse now directs urgent, routine and follow-up cases into different queues.",
       "The camera detects pedestrians, bicycles and cars and brakes differently for each.",
-      "The gardener sorts seedlings by the care each kind requires."
+      "The gardener sorts seedlings by the care each kind requires.",
+      "When the baby is hungry we feed her, when she's tired we settle her, and when she's frightened we hold her.",
+      "Loose pages are sewn back in, torn pages are mended, and missing pages are reproduced from another copy.",
+      "People who need company join the weekly gatherings, those who cannot leave home receive visits, and those needing practical help are paired with volunteers."
     ],
     "07": [
       "The two jars were labelled alike, but the tests showed that one contained salt and the other sugar.",
       "The twins' identical uniforms hid two very different ranks.",
-      "What had always been called one dialect proved to contain two distinct languages."
+      "What had always been called one dialect proved to contain two distinct languages.",
+      "Being alone and being lonely are two quite different things.",
+      "I've come to distinguish between forgiving someone and trusting them again.",
+      "For the first time, she could distinguish what she wanted from what was expected of her."
     ],
     "08": [
       "Rather than asking who spoke correctly, the teacher arranged the accents along a gradual spectrum.",
       "The wines were ordered by sweetness without treating the driest as the ideal.",
-      "She compared the hills by steepness instead of ranking them against one perfect slope."
+      "She compared the hills by steepness instead of ranking them against one perfect slope.",
+      "There's no right strength for tea; some of us simply like it stronger than others."
     ],
     "09": [
       "Once the label 'broken' was set aside, the mechanic salvaged the working parts and discarded only the damaged ones.",
       "The doctor stopped treating every red mark alike and isolated the ones needing attention.",
-      "When the school abandoned its single 'late' category, it admitted delayed buses but penalised deliberate absences."
+      "When the school abandoned its single 'late' category, it admitted delayed buses but penalised deliberate absences.",
+      "I no longer throw clothes out just because they're faded; only the ones that have become unwearable go.",
+      "She stopped accepting every invitation out of politeness and began saying yes only to the occasions she genuinely wanted to attend."
     ]
   }
 }
