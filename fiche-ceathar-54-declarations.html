@@ -12,7 +12,7 @@
 a{color:var(--goldbright)}a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
 header{padding:78px 24px 52px;text-align:center;max-width:1100px;margin:auto}.eyebrow{font:700 11px/1.6 system-ui,sans-serif;letter-spacing:.29em;text-transform:uppercase;color:var(--goldbright)}h1{font-size:clamp(46px,8vw,104px);line-height:1.04;font-weight:400;letter-spacing:-.055em;margin:18px auto 16px;max-width:1000px}.intro{max-width:710px;margin:0 auto;color:#e3d19e;font-size:clamp(16px,2.1vw,20px);line-height:1.7}.nav{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:32px}.nav a{font:700 11px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:10px 14px;border:1px solid #8baf8f;border-radius:999px;background:#0b5043}.nav a:hover{background:#12634f}
 main{max-width:1320px;margin:0 auto;padding:0 24px 100px}.group-head{display:flex;align-items:center;gap:19px;margin:55px 0 24px}.group-head h2{font-weight:400;font-size:clamp(28px,4vw,46px);margin:0;white-space:nowrap}.group-head:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--border),transparent)}.group-head .range{font:600 11px system-ui,sans-serif;white-space:nowrap;color:#d1bf8a;letter-spacing:.1em}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.declaration{display:flex;flex-direction:column;min-height:365px;padding:28px 27px 31px;background:linear-gradient(153deg,#10634f 0%,#084a3c 52%,#06392f 100%);border:1px solid #558b70;border-radius:7px;box-shadow:0 14px 32px #001c184d;position:relative;overflow:hidden}.declaration:before{content:"";position:absolute;inset:7px;border:1px solid #d4b46348;pointer-events:none}.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.number,.family,.identity{font:600 10px/1.5 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#ead39b}.declaration h2{font-size:clamp(24px,2.5vw,34px);font-weight:400;line-height:1.16;margin:24px 0 12px;letter-spacing:-.02em;color:var(--goldbright)}.identity{line-height:1.6;letter-spacing:.02em;text-transform:none;color:#d6c58e;min-height:32px}.gold-rule{height:1px;background:linear-gradient(90deg,#e1bd67,transparent);margin:16px 0 22px}.declaration blockquote{font-size:clamp(19px,1.85vw,25px);line-height:1.42;margin:auto 0 0;color:#f8df9e;font-weight:400;text-wrap:pretty}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.declaration{display:flex;flex-direction:column;min-height:365px;padding:28px 27px 31px;background:linear-gradient(153deg,#10634f 0%,#084a3c 52%,#06392f 100%);border:1px solid #558b70;border-radius:7px;box-shadow:0 14px 32px #001c184d;position:relative;overflow:hidden}.declaration:before{content:"";position:absolute;inset:7px;border:1px solid #d4b46348;pointer-events:none}.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.number,.family,.identity{font:600 10px/1.5 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#ead39b}.declaration h2{font-size:clamp(24px,2.5vw,34px);font-weight:400;line-height:1.16;margin:24px 0 12px;letter-spacing:-.02em;color:var(--goldbright)}.identity{line-height:1.6;letter-spacing:.02em;text-transform:none;color:#d6c58e;min-height:32px}.gold-rule{height:1px;background:linear-gradient(90deg,#e1bd67,transparent);margin:16px 0 22px}.declaration .card-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px;padding-top:15px;border-top:1px solid #aa96665a;position:relative;z-index:1}.declaration .card-links a{font:700 11px/1.5 system-ui,sans-serif;text-decoration:underline;text-underline-offset:3px;color:#f4dc9f}.declaration:target{outline:3px solid #f4d17d;outline-offset:5px}.declaration blockquote{font-size:clamp(19px,1.85vw,25px);line-height:1.42;margin:auto 0 0;color:#f8df9e;font-weight:400;text-wrap:pretty}
 footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;color:#e7d09d;font:12px/1.6 system-ui,sans-serif}
 @media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){header{padding:52px 18px 36px}main{padding:0 14px 70px}.grid{grid-template-columns:1fr}.declaration{min-height:290px;padding:27px}.group-head{margin-top:43px}.group-head .range{display:none}}
 @media print{body{background:#073e33;-webkit-print-color-adjust:exact;print-color-adjust:exact}.nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.declaration{break-inside:avoid}header{padding-top:24px}main{padding-bottom:18px}}
@@ -23,6 +23,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
   <p class="eyebrow">Fiche Ceathar · The 54</p>
   <h1>What each cell says.</h1>
   <p class="intro">Fifty-four declarations distilled from four cycles of characterisation. Each form speaks its own completed intelligibility: what it transforms, how it reaches sufficiency, and what remains.</p>
+  <nav class="nav" aria-label="Wonder pages"><a href="./">Living cards</a><a href="corpus.html">Complete corpus</a><a href="gallery.html">Sentence gallery</a><a href="study.html">Ongoing study</a></nav>
   <nav class="nav" aria-label="Jump to a family">
     <a href="#differentiation">Differentiation</a><a href="#opening">Opening</a><a href="#relating">Relating</a><a href="#repair">Repair</a><a href="#integration">Integration</a><a href="#settlement">Settlement</a>
   </nav>
@@ -37,6 +38,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Focal × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make this particular unmistakably itself; once recognised, it stands before you as this one.”</blockquote>
+      <div class="card-links"><a href="./#cell-01">Living card</a><a href="corpus.html#cell-01">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-02" aria-labelledby="title-02">
       <div class="card-top"><span class="number">02 / 54</span><span class="family">Differentiation</span></div>
@@ -44,6 +46,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Focal × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I set this one apart through the contrast that makes its difference matter.”</blockquote>
+      <div class="card-links"><a href="./#cell-02">Living card</a><a href="corpus.html#cell-02">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-03" aria-labelledby="title-03">
       <div class="card-top"><span class="number">03 / 54</span><span class="family">Differentiation</span></div>
@@ -51,6 +54,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Focal × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I draw the line where difference takes effect and the next course changes.”</blockquote>
+      <div class="card-links"><a href="./#cell-03">Living card</a><a href="corpus.html#cell-03">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-04" aria-labelledby="title-04">
       <div class="card-top"><span class="number">04 / 54</span><span class="family">Differentiation</span></div>
@@ -58,6 +62,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Distributed × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I give the entire range its distinctions, so that each part can be seen in its place.”</blockquote>
+      <div class="card-links"><a href="./#cell-04">Living card</a><a href="corpus.html#cell-04">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-05" aria-labelledby="title-05">
       <div class="card-top"><span class="number">05 / 54</span><span class="family">Differentiation</span></div>
@@ -65,6 +70,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Distributed × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I disclose what this is here, through the company in which it stands.”</blockquote>
+      <div class="card-links"><a href="./#cell-05">Living card</a><a href="corpus.html#cell-05">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-06" aria-labelledby="title-06">
       <div class="card-top"><span class="number">06 / 54</span><span class="family">Differentiation</span></div>
@@ -72,6 +78,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Distributed × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I let the differences across these cases determine what each one receives.”</blockquote>
+      <div class="card-links"><a href="./#cell-06">Living card</a><a href="corpus.html#cell-06">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-07" aria-labelledby="title-07">
       <div class="card-top"><span class="number">07 / 54</span><span class="family">Differentiation</span></div>
@@ -79,6 +86,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Release × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I let real differences stand after the old label has ceased to make them the same.”</blockquote>
+      <div class="card-links"><a href="./#cell-07">Living card</a><a href="corpus.html#cell-07">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-08" aria-labelledby="title-08">
       <div class="card-top"><span class="number">08 / 54</span><span class="family">Differentiation</span></div>
@@ -86,6 +94,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Release × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I keep comparison alive without allowing any one term to govern the measure of the others.”</blockquote>
+      <div class="card-links"><a href="./#cell-08">Living card</a><a href="corpus.html#cell-08">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-09" aria-labelledby="title-09">
       <div class="card-top"><span class="number">09 / 54</span><span class="family">Differentiation</span></div>
@@ -93,6 +102,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Differentiation × Release × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I put the relevant difference in charge of selection, beyond the old blanket judgement.”</blockquote>
+      <div class="card-links"><a href="./#cell-09">Living card</a><a href="corpus.html#cell-09">Full corpus</a></div>
     </article>
 </div></section>
 <section id="opening" aria-labelledby="group-1">
@@ -104,6 +114,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Focal × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I establish the point from which what was inaccessible becomes open.”</blockquote>
+      <div class="card-links"><a href="./#cell-10">Living card</a><a href="corpus.html#cell-10">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-11" aria-labelledby="title-11">
       <div class="card-top"><span class="number">11 / 54</span><span class="family">Opening</span></div>
@@ -111,6 +122,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Focal × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I open different ways from one source, and their availability continues through that source.”</blockquote>
+      <div class="card-links"><a href="./#cell-11">Living card</a><a href="corpus.html#cell-11">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-12" aria-labelledby="title-12">
       <div class="card-top"><span class="number">12 / 54</span><span class="family">Opening</span></div>
@@ -118,6 +130,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Focal × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make the passage work here, so that the ways beyond it can actually be taken.”</blockquote>
+      <div class="card-links"><a href="./#cell-12">Living card</a><a href="corpus.html#cell-12">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-13" aria-labelledby="title-13">
       <div class="card-top"><span class="number">13 / 54</span><span class="family">Opening</span></div>
@@ -125,6 +138,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Distributed × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I establish a whole repertoire of ways forward; no single route exhausts the opening.”</blockquote>
+      <div class="card-links"><a href="./#cell-13">Living card</a><a href="corpus.html#cell-13">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-14" aria-labelledby="title-14">
       <div class="card-top"><span class="number">14 / 54</span><span class="family">Opening</span></div>
@@ -132,6 +146,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Distributed × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I open the span through the distinct conditions that carry access at each place.”</blockquote>
+      <div class="card-links"><a href="./#cell-14">Living card</a><a href="corpus.html#cell-14">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-15" aria-labelledby="title-15">
       <div class="card-top"><span class="number">15 / 54</span><span class="family">Opening</span></div>
@@ -139,6 +154,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Distributed × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I carry what once worked only here across the full extent where it must work.”</blockquote>
+      <div class="card-links"><a href="./#cell-15">Living card</a><a href="corpus.html#cell-15">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-16" aria-labelledby="title-16">
       <div class="card-top"><span class="number">16 / 54</span><span class="family">Opening</span></div>
@@ -146,6 +162,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Release × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I allow the once-forbidden option to stand as possible, even before it is chosen.”</blockquote>
+      <div class="card-links"><a href="./#cell-16">Living card</a><a href="corpus.html#cell-16">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-17" aria-labelledby="title-17">
       <div class="card-top"><span class="number">17 / 54</span><span class="family">Opening</span></div>
@@ -153,6 +170,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Release × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I free access from repeated permission while keeping it borne by a valid entitlement.”</blockquote>
+      <div class="card-links"><a href="./#cell-17">Living card</a><a href="corpus.html#cell-17">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-18" aria-labelledby="title-18">
       <div class="card-top"><span class="number">18 / 54</span><span class="family">Opening</span></div>
@@ -160,6 +178,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Opening × Release × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I carry action beyond the old stopping point, where it can now truly proceed.”</blockquote>
+      <div class="card-links"><a href="./#cell-18">Living card</a><a href="corpus.html#cell-18">Full corpus</a></div>
     </article>
 </div></section>
 <section id="relating" aria-labelledby="group-2">
@@ -171,6 +190,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Focal × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I establish this direct bearing on that: the connection stands.”</blockquote>
+      <div class="card-links"><a href="./#cell-19">Living card</a><a href="corpus.html#cell-19">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-20" aria-labelledby="title-20">
       <div class="card-top"><span class="number">20 / 54</span><span class="family">Relating</span></div>
@@ -178,6 +198,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Focal × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make the terms intelligible through how they counterbalance about this pivot.”</blockquote>
+      <div class="card-links"><a href="./#cell-20">Living card</a><a href="corpus.html#cell-20">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-21" aria-labelledby="title-21">
       <div class="card-top"><span class="number">21 / 54</span><span class="family">Relating</span></div>
@@ -185,6 +206,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Focal × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I complete the connection in the answer it actually brings back.”</blockquote>
+      <div class="card-links"><a href="./#cell-21">Living card</a><a href="corpus.html#cell-21">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-22" aria-labelledby="title-22">
       <div class="card-top"><span class="number">22 / 54</span><span class="family">Relating</span></div>
@@ -192,6 +214,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Distributed × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I place the links in their determinate order, so the whole sequence can be followed.”</blockquote>
+      <div class="card-links"><a href="./#cell-22">Living card</a><a href="corpus.html#cell-22">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-23" aria-labelledby="title-23">
       <div class="card-top"><span class="number">23 / 54</span><span class="family">Relating</span></div>
@@ -199,6 +222,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Distributed × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I let each term take its meaning from its bearing on the others.”</blockquote>
+      <div class="card-links"><a href="./#cell-23">Living card</a><a href="corpus.html#cell-23">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-24" aria-labelledby="title-24">
       <div class="card-top"><span class="number">24 / 54</span><span class="family">Relating</span></div>
@@ -206,6 +230,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Distributed × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make relations consequential throughout the course, where each effect shapes what follows.”</blockquote>
+      <div class="card-links"><a href="./#cell-24">Living card</a><a href="corpus.html#cell-24">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-25" aria-labelledby="title-25">
       <div class="card-top"><span class="number">25 / 54</span><span class="family">Relating</span></div>
@@ -213,6 +238,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Release × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I preserve the same pattern across presentations that no longer have authority to divide it.”</blockquote>
+      <div class="card-links"><a href="./#cell-25">Living card</a><a href="corpus.html#cell-25">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-26" aria-labelledby="title-26">
       <div class="card-top"><span class="number">26 / 54</span><span class="family">Relating</span></div>
@@ -220,6 +246,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Release × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I release the role from its old bearer while preserving what truly answers to it.”</blockquote>
+      <div class="card-links"><a href="./#cell-26">Living card</a><a href="corpus.html#cell-26">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-27" aria-labelledby="title-27">
       <div class="card-top"><span class="number">27 / 54</span><span class="family">Relating</span></div>
@@ -227,6 +254,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Relating × Release × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make once-separated activities responsive to one another without the old barrier deciding between them.”</blockquote>
+      <div class="card-links"><a href="./#cell-27">Living card</a><a href="corpus.html#cell-27">Full corpus</a></div>
     </article>
 </div></section>
 <section id="repair" aria-labelledby="group-3">
@@ -238,6 +266,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Focal × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I set right what was wrong at this point, and let the corrected determination stand.”</blockquote>
+      <div class="card-links"><a href="./#cell-28">Living card</a><a href="corpus.html#cell-28">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-29" aria-labelledby="title-29">
       <div class="card-top"><span class="number">29 / 54</span><span class="family">Repair</span></div>
@@ -245,6 +274,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Focal × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I bring this into the right proportion with what it must fit.”</blockquote>
+      <div class="card-links"><a href="./#cell-29">Living card</a><a href="corpus.html#cell-29">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-30" aria-labelledby="title-30">
       <div class="card-top"><span class="number">30 / 54</span><span class="family">Repair</span></div>
@@ -252,6 +282,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Focal × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I restore the ability to carry the work at the very point where it failed.”</blockquote>
+      <div class="card-links"><a href="./#cell-30">Living card</a><a href="corpus.html#cell-30">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-31" aria-labelledby="title-31">
       <div class="card-top"><span class="number">31 / 54</span><span class="family">Repair</span></div>
@@ -259,6 +290,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Distributed × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make the correction hold across every relevant position of the account.”</blockquote>
+      <div class="card-links"><a href="./#cell-31">Living card</a><a href="corpus.html#cell-31">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-32" aria-labelledby="title-32">
       <div class="card-top"><span class="number">32 / 54</span><span class="family">Repair</span></div>
@@ -266,6 +298,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Distributed × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I restore the fit where the parts answer to one another, not merely within each part.”</blockquote>
+      <div class="card-links"><a href="./#cell-32">Living card</a><a href="corpus.html#cell-32">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-33" aria-labelledby="title-33">
       <div class="card-top"><span class="number">33 / 54</span><span class="family">Repair</span></div>
@@ -273,6 +306,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Distributed × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I repair the whole course so the work can pass through every necessary stage.”</blockquote>
+      <div class="card-links"><a href="./#cell-33">Living card</a><a href="corpus.html#cell-33">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-34" aria-labelledby="title-34">
       <div class="card-top"><span class="number">34 / 54</span><span class="family">Repair</span></div>
@@ -280,6 +314,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Release × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I replace the mistaken governing limit with a sound determination that stands.”</blockquote>
+      <div class="card-links"><a href="./#cell-34">Living card</a><a href="corpus.html#cell-34">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-35" aria-labelledby="title-35">
       <div class="card-top"><span class="number">35 / 54</span><span class="family">Repair</span></div>
@@ -287,6 +322,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Release × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I restore the fit to the real requirement, no longer ruled by the condition that made it fail.”</blockquote>
+      <div class="card-links"><a href="./#cell-35">Living card</a><a href="corpus.html#cell-35">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-36" aria-labelledby="title-36">
       <div class="card-top"><span class="number">36 / 54</span><span class="family">Repair</span></div>
@@ -294,6 +330,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Repair × Release × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I restore ordinary functioning without the defect dictating every workaround.”</blockquote>
+      <div class="card-links"><a href="./#cell-36">Living card</a><a href="corpus.html#cell-36">Full corpus</a></div>
     </article>
 </div></section>
 <section id="integration" aria-labelledby="group-4">
@@ -305,6 +342,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Focal × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I gather distinct parts around a constitutive centre until one whole stands.”</blockquote>
+      <div class="card-links"><a href="./#cell-37">Living card</a><a href="corpus.html#cell-37">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-38" aria-labelledby="title-38">
       <div class="card-top"><span class="number">38 / 54</span><span class="family">Integration</span></div>
@@ -312,6 +350,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Focal × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I hold these parts as one through the shared support on which their unity depends.”</blockquote>
+      <div class="card-links"><a href="./#cell-38">Living card</a><a href="corpus.html#cell-38">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-39" aria-labelledby="title-39">
       <div class="card-top"><span class="number">39 / 54</span><span class="family">Integration</span></div>
@@ -319,6 +358,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Focal × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I turn distinct contributions into one ability through the centre that makes them work together.”</blockquote>
+      <div class="card-links"><a href="./#cell-39">Living card</a><a href="corpus.html#cell-39">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-40" aria-labelledby="title-40">
       <div class="card-top"><span class="number">40 / 54</span><span class="family">Integration</span></div>
@@ -326,6 +366,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Distributed × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I give each part a determinate role in the composition of the whole.”</blockquote>
+      <div class="card-links"><a href="./#cell-40">Living card</a><a href="corpus.html#cell-40">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-41" aria-labelledby="title-41">
       <div class="card-top"><span class="number">41 / 54</span><span class="family">Integration</span></div>
@@ -333,6 +374,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Distributed × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make the whole hold through the mutual support of its parts.”</blockquote>
+      <div class="card-links"><a href="./#cell-41">Living card</a><a href="corpus.html#cell-41">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-42" aria-labelledby="title-42">
       <div class="card-top"><span class="number">42 / 54</span><span class="family">Integration</span></div>
@@ -340,6 +382,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Distributed × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I bring complementary roles into one accomplished competence across the organisation.”</blockquote>
+      <div class="card-links"><a href="./#cell-42">Living card</a><a href="corpus.html#cell-42">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-43" aria-labelledby="title-43">
       <div class="card-top"><span class="number">43 / 54</span><span class="family">Integration</span></div>
@@ -347,6 +390,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Release × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I let one whole stand where inherited divisions once decided what could belong together.”</blockquote>
+      <div class="card-links"><a href="./#cell-43">Living card</a><a href="corpus.html#cell-43">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-44" aria-labelledby="title-44">
       <div class="card-top"><span class="number">44 / 54</span><span class="family">Integration</span></div>
@@ -354,6 +398,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Release × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I sustain unity through actual bonds after the old territories cease to decide belonging.”</blockquote>
+      <div class="card-links"><a href="./#cell-44">Living card</a><a href="corpus.html#cell-44">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-45" aria-labelledby="title-45">
       <div class="card-top"><span class="number">45 / 54</span><span class="family">Integration</span></div>
@@ -361,6 +406,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Integration × Release × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I make the undertaking act as one, beyond the former claims that divided its work.”</blockquote>
+      <div class="card-links"><a href="./#cell-45">Living card</a><a href="corpus.html#cell-45">Full corpus</a></div>
     </article>
 </div></section>
 <section id="settlement" aria-labelledby="group-5">
@@ -372,6 +418,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Focal × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I bring the live alternative to its answer: this is the choice that stands.”</blockquote>
+      <div class="card-links"><a href="./#cell-46">Living card</a><a href="corpus.html#cell-46">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-47" aria-labelledby="title-47">
       <div class="card-top"><span class="number">47 / 54</span><span class="family">Settlement</span></div>
@@ -379,6 +426,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Focal × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I settle this particular matter through the terms that make its answer binding between us.”</blockquote>
+      <div class="card-links"><a href="./#cell-47">Living card</a><a href="corpus.html#cell-47">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-48" aria-labelledby="title-48">
       <div class="card-top"><span class="number">48 / 54</span><span class="family">Settlement</span></div>
@@ -386,6 +434,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Focal × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I discharge the question of what next in a course that can now be taken.”</blockquote>
+      <div class="card-links"><a href="./#cell-48">Living card</a><a href="corpus.html#cell-48">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-49" aria-labelledby="title-49">
       <div class="card-top"><span class="number">49 / 54</span><span class="family">Settlement</span></div>
@@ -393,6 +442,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Distributed × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I answer the relevant questions across the entire matter, leaving no demand in that range unanswered.”</blockquote>
+      <div class="card-links"><a href="./#cell-49">Living card</a><a href="corpus.html#cell-49">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-50" aria-labelledby="title-50">
       <div class="card-top"><span class="number">50 / 54</span><span class="family">Settlement</span></div>
@@ -400,6 +450,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Distributed × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I settle the claims together through the conditions by which each bears on the others.”</blockquote>
+      <div class="card-links"><a href="./#cell-50">Living card</a><a href="corpus.html#cell-50">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-51" aria-labelledby="title-51">
       <div class="card-top"><span class="number">51 / 54</span><span class="family">Settlement</span></div>
@@ -407,6 +458,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Distributed × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I settle the necessary decisions across the cases so the course can reach completion.”</blockquote>
+      <div class="card-links"><a href="./#cell-51">Living card</a><a href="corpus.html#cell-51">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-52" aria-labelledby="title-52">
       <div class="card-top"><span class="number">52 / 54</span><span class="family">Settlement</span></div>
@@ -414,6 +466,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Release × Standing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I let a valid decision stand without the remaining objection compelling us to decide again.”</blockquote>
+      <div class="card-links"><a href="./#cell-52">Living card</a><a href="corpus.html#cell-52">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-53" aria-labelledby="title-53">
       <div class="card-top"><span class="number">53 / 54</span><span class="family">Settlement</span></div>
@@ -421,6 +474,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Release × Bearing</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I show how what was claimed is already accounted for, until nothing remains due.”</blockquote>
+      <div class="card-links"><a href="./#cell-53">Living card</a><a href="corpus.html#cell-53">Full corpus</a></div>
     </article>
 <article class="declaration" id="cell-54" aria-labelledby="title-54">
       <div class="card-top"><span class="number">54 / 54</span><span class="family">Settlement</span></div>
@@ -428,6 +482,7 @@ footer{text-align:center;border-top:1px solid #4a7b69;padding:30px 20px 45px;col
       <p class="identity">Settlement × Release × Efficacy</p>
       <div class="gold-rule" aria-hidden="true"></div>
       <blockquote>“I discharge the demand to revisit this matter, so continuation no longer has to turn back.”</blockquote>
+      <div class="card-links"><a href="./#cell-54">Living card</a><a href="corpus.html#cell-54">Full corpus</a></div>
     </article>
 </div></section>
 </main>
